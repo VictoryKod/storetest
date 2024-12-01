@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+}
+
+/* *все теги, inherit - как в родительском блоке */
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1220px;
+/* верх/низ 0, влево/право авто */
+    margin: 0 auto;
+    padding: 0 10 px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header {
+    background-color: #151515;
+}
+
+/* гл.страница */
+.header-main {
+    /* background-color: transparent; */
+}
+/* верхнее меню */
+.header__inner {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    display: flex;
+    /* меню к правому краю */
+    justify-content: space-between;
+    /* меню вниз */
+    align-items: flex-end;
+}
+
+.menu__list {
+    display: flex;
+   /*  отступы между словами меню */
+   gap: 35px;
+
+}
+
+.menu__list-link {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700px;
+
+}
