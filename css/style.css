@@ -47,7 +47,12 @@ body {
 
 /* гл.страница */
 .header-main {
-    /* background-color: transparent; */
+    background-color: transparent;
+/* Подняли header-main */  
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
 }
 /* верхнее меню */
 .header__inner {
@@ -135,3 +140,86 @@ body {
 /* пропорциональное увеличение */
     flex-grow: 1;
 }
+
+.top {
+    color: #ffff;
+    text-align: center;
+/* 150 по макету но следим по ходу верстки */
+    padding-top: 250px;
+    padding-bottom: 50px;
+/* Подняли топ и растянули (тоже самое с header-main*/ 
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+
+}
+
+.title {
+
+    padding-bottom: 40px;
+    font-size: 96px;
+    font-weight: 700px;
+}
+
+.top__link {
+    background-color: #151515;
+/* Текст кнопки можно будет менять, 
+размер будет адаптироваться */
+    padding: 23px;
+/* задали ширину блока кнопки */
+    max-width: 430px;
+/* применили ширину к кнопке (цвет обтекает не только текст) */
+    width: 100%;
+/* инлайн-блок, чтобы ссылка была строкой с блочным размером */
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700px;
+
+}
+
+/* Затемнили картинку вручную при помощи пвсевдокласса */
+.swiper::after {
+    content: "";
+    background-color: rgba(21,21,21,.3);
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+
+.swiper-slide {
+    /* если монитор маленький, чтобы имг не повторялось */
+    background-repeat: no-repeat;
+    /* Чтобы картинка заполняла пространство */
+    background-size: cover;
+   /*  background-position: center; */
+    height: 100vh;
+
+}
+
+/* Кастомизируем pagination у свайпера */
+.swiper-pagination-bullet {
+    width: 120px;
+    height: 3px;
+    background-color: #151515;
+    border-radius: 0;
+    opacity: 1;
+    /* используем !important т.к. встроенный в слайдер тег имеет много вложений */
+    margin: 0 15px !important;
+}
+
+/* пример без !important, теги вытащили из инспектора и сократили  */
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 50px;
+}
+
+.swiper-pagination-bullet-active {
+    height: 6px;
+    background-color: #ffff;
+}
+
