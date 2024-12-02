@@ -21,7 +21,6 @@ a {
     color: inherit;
 }
 
-/* блок под слайдером  */ 
 .section-title {
     margin-bottom: 50px;
     font-size: 48px;
@@ -265,6 +264,7 @@ body {
 
 .how-does__inner {
     max-width: 600px;
+/* отступы сверху-снизу 0 и центровка блока */
     margin: 0 auto;
 }
 
@@ -337,4 +337,28 @@ top: 0;
 .video__content {
     margin: 0 auto;
     display: block;
+}
+
+.important {
+    padding-bottom: 150px;
+}
+
+.important__title {
+    margin-bottom: 20px;
+}
+
+.important__text {
+    max-width: 580px;
+/* отступы сверху-снизу 0, центровка блока, отступ вниз 50 */
+    margin: 0 auto 50px;    
+}
+
+.important__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+  
+}
+
+.important__item-img {
+    margin-bottom: 20px;
 }
