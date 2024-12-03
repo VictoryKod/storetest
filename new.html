@@ -53,13 +53,13 @@
             </h2>
             <div class="tabs">
               <div class="tabs__btn">
-                <button class="tabs__btn-item tabs__btn-item--active">Recommend</button>
-                <button class="tabs__btn-item">Fresh</button>
-                <button class="tabs__btn-item">Retro</button>
-                <button class="tabs__btn-item">Exclusive</button>
+                <button class="tabs__btn-item tabs__btn-item--active" data-button="content-1">Recommend</button>
+                <button class="tabs__btn-item" data-button="content-2">Fresh</button>
+                <button class="tabs__btn-item" data-button="content-3">Retro</button>
+                <button class="tabs__btn-item" data-button="content-4">Exclusive</button>
               </div>
               <div class="tabs__content">
-                <div class="tabs__content-item">
+                <div class="tabs__content-item" id="content-1">
 
                   <div class="card">
                       <div class="card__content">
@@ -181,13 +181,13 @@
               </div>
               </div>
 
-                <div class="tabs__content-item">
+                <div class="tabs__content-item" id="content-2">
                   
                 </div>
-                <div class="tabs__content-item">
+                <div class="tabs__content-item" id="content-3">
                   
                 </div>
-                <div class="tabs__content-item">
+                <div class="tabs__content-item" id="content-4">
                   
                 </div>
               </div>
@@ -321,7 +321,6 @@
       </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/tabs.js"></script>
   </body>
 </html>
