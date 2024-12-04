@@ -15,7 +15,7 @@
   <body>
     <!-- Внешняя обертка сайта -->
     <div class="wrapper">
-  <!-- шапка -->
+      <!-- шапка -->
       <header class="header">
         <div class="container">
           <div class="header__inner">
@@ -28,7 +28,11 @@
                   <a href="#" class="menu__list-link">CATALOG</a>
                 </li>
                 <li class="menu__list-item">
-                  <a href="#" class="menu__list-link menu__list-link--active">NEW</a>
+                  <a
+                    href="new.html"
+                    class="menu__list-link menu__list-link--active"
+                    >NEW</a
+                  >
                 </li>
                 <li class="menu__list-item">
                   <a href="#" class="menu__list-link">DELIVERY</a>
@@ -44,36 +48,49 @@
           </div>
         </div>
       </header>
-<!-- каталог новинок --> 
+      <!-- каталог новинок -->
       <main class="main">
         <section class="new-records">
           <div class="container">
-            <h2 class="section-title">
-              New records
-            </h2>
+            <h2 class="section-title">New records</h2>
             <div class="tabs">
               <div class="tabs__btn">
-                <button class="tabs__btn-item tabs__btn-item--active" data-button="content-1">Recommend</button>
-                <button class="tabs__btn-item" data-button="content-2">Fresh</button>
-                <button class="tabs__btn-item" data-button="content-3">Retro</button>
-                <button class="tabs__btn-item" data-button="content-4">Exclusive</button>
+                <button
+                  class="tabs__btn-item tabs__btn-item--active"
+                  data-button="content-1"
+                >
+                  Recommend
+                </button>
+                <button class="tabs__btn-item" data-button="content-2">
+                  Fresh
+                </button>
+                <button class="tabs__btn-item" data-button="content-3">
+                  Retro
+                </button>
+                <button class="tabs__btn-item" data-button="content-4">
+                  Exclusive
+                </button>
               </div>
               <div class="tabs__content">
-                <div class="tabs__content-item" id="content-1">
-
+            
+              <!-- Recommend -->
+                <div
+                  class="tabs__content-item tabs__content-item--active"
+                  id="content-1"
+                >
                   <div class="card">
-                      <div class="card__content">
-                        <img src="images/card-1.jpg" alt="" class="card__img">
-                        <h4 class="card__autor">Anohni</h4>
-                        <p class="card__album">Despair and Delirium</p>
-                        <p class="card__price">5500 ₽</p>
-                      </div>
+                    <div class="card__content">
+                      <img src="images/card-1.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Anohni</h4>
+                      <p class="card__album">Despair and Delirium</p>
+                      <p class="card__price">5500 ₽</p>
+                    </div>
                     <a href="#" class="card__link">BUY NOW</a>
                   </div>
 
                   <div class="card">
                     <div class="card__content">
-                      <img src="images/card-2.jpg" alt="" class="card__img">
+                      <img src="images/card-2.jpg" alt="" class="card__img" />
                       <h4 class="card__autor">Virgin Prunes</h4>
                       <p class="card__album">Anxiety Attack</p>
                       <p class="card__price">4800 ₽</p>
@@ -83,7 +100,7 @@
 
                   <div class="card">
                     <div class="card__content">
-                      <img src="images/card-3.jpg" alt="" class="card__img">
+                      <img src="images/card-3.jpg" alt="" class="card__img" />
                       <h4 class="card__autor">Despair</h4>
                       <p class="card__album">Hopelessness</p>
                       <p class="card__price">3500 ₽</p>
@@ -93,7 +110,7 @@
 
                   <div class="card">
                     <div class="card__content">
-                      <img src="images/card-4.jpg" alt="" class="card__img">
+                      <img src="images/card-4.jpg" alt="" class="card__img" />
                       <h4 class="card__autor">Lento</h4>
                       <p class="card__album">Insomnia Chronicles</p>
                       <p class="card__price">4000 ₽</p>
@@ -102,115 +119,189 @@
                   </div>
                   <div class="card">
                     <div class="card__content">
-                      <img src="images/card-1.jpg" alt="" class="card__img">
+                      <img src="images/card-1.jpg" alt="" class="card__img" />
                       <h4 class="card__autor">Anohni</h4>
                       <p class="card__album">Despair and Delirium</p>
                       <p class="card__price">5500 ₽</p>
                     </div>
-                  <a href="#" class="card__link">BUY NOW</a>
-                </div>
-
-                <div class="card">
-                  <div class="card__content">
-                    <img src="images/card-2.jpg" alt="" class="card__img">
-                    <h4 class="card__autor">Virgin Prunes</h4>
-                    <p class="card__album">Anxiety Attack</p>
-                    <p class="card__price">4800 ₽</p>
+                    <a href="#" class="card__link">BUY NOW</a>
                   </div>
-                  <a href="#" class="card__link">BUY NOW</a>
-                </div>
 
-                <div class="card">
-                  <div class="card__content">
-                    <img src="images/card-3.jpg" alt="" class="card__img">
-                    <h4 class="card__autor">Despair</h4>
-                    <p class="card__album">Hopelessness</p>
-                    <p class="card__price">3500 ₽</p>
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-2.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Virgin Prunes</h4>
+                      <p class="card__album">Anxiety Attack</p>
+                      <p class="card__price">4800 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
                   </div>
-                  <a href="#" class="card__link">BUY NOW</a>
-                </div>
 
-                <div class="card">
-                  <div class="card__content">
-                    <img src="images/card-4.jpg" alt="" class="card__img">
-                    <h4 class="card__autor">Lento</h4>
-                    <p class="card__album">Insomnia Chronicles</p>
-                    <p class="card__price">4000 ₽</p>
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-3.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Despair</h4>
+                      <p class="card__album">Hopelessness</p>
+                      <p class="card__price">3500 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
                   </div>
-                  <a href="#" class="card__link">BUY NOW</a>
-                </div>
 
-                <div class="card">
-                  <div class="card__content">
-                    <img src="images/card-1.jpg" alt="" class="card__img">
-                    <h4 class="card__autor">Anohni</h4>
-                    <p class="card__album">Despair and Delirium</p>
-                    <p class="card__price">5500 ₽</p>
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-4.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Lento</h4>
+                      <p class="card__album">Insomnia Chronicles</p>
+                      <p class="card__price">4000 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
                   </div>
-                <a href="#" class="card__link">BUY NOW</a>
-              </div>
 
-              <div class="card">
-                <div class="card__content">
-                  <img src="images/card-2.jpg" alt="" class="card__img">
-                  <h4 class="card__autor">Virgin Prunes</h4>
-                  <p class="card__album">Anxiety Attack</p>
-                  <p class="card__price">4800 ₽</p>
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-1.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Anohni</h4>
+                      <p class="card__album">Despair and Delirium</p>
+                      <p class="card__price">5500 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
+                  </div>
+
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-2.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Virgin Prunes</h4>
+                      <p class="card__album">Anxiety Attack</p>
+                      <p class="card__price">4800 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
+                  </div>
+
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-3.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Despair</h4>
+                      <p class="card__album">Hopelessness</p>
+                      <p class="card__price">3500 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
+                  </div>
+
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-4.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Lento</h4>
+                      <p class="card__album">Insomnia Chronicles</p>
+                      <p class="card__price">4000 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
+                  </div>
                 </div>
-                <a href="#" class="card__link">BUY NOW</a>
-              </div>
-
-              <div class="card">
-                <div class="card__content">
-                  <img src="images/card-3.jpg" alt="" class="card__img">
-                  <h4 class="card__autor">Despair</h4>
-                  <p class="card__album">Hopelessness</p>
-                  <p class="card__price">3500 ₽</p>
-                </div>
-                <a href="#" class="card__link">BUY NOW</a>
-              </div>
-
-              <div class="card">
-                <div class="card__content">
-                  <img src="images/card-4.jpg" alt="" class="card__img">
-                  <h4 class="card__autor">Lento</h4>
-                  <p class="card__album">Insomnia Chronicles</p>
-                  <p class="card__price">4000 ₽</p>
-                </div>
-                <a href="#" class="card__link">BUY NOW</a>
-              </div>
-              </div>
-
+                
+                <!-- Fresh -->
                 <div class="tabs__content-item" id="content-2">
-                  
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-2.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Virgin Prunes</h4>
+                      <p class="card__album">Anxiety Attack</p>
+                      <p class="card__price">4800 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
+                  </div>
+
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-3.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Despair</h4>
+                      <p class="card__album">Hopelessness</p>
+                      <p class="card__price">3500 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
+                  </div>
+
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-4.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Lento</h4>
+                      <p class="card__album">Insomnia Chronicles</p>
+                      <p class="card__price">4000 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
+                  </div>
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-2.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Virgin Prunes</h4>
+                      <p class="card__album">Anxiety Attack</p>
+                      <p class="card__price">4800 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
+                  </div>
                 </div>
+                </div>
+
+                <!-- Retro -->
                 <div class="tabs__content-item" id="content-3">
-                  
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-4.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Lento</h4>
+                      <p class="card__album">Insomnia Chronicles</p>
+                      <p class="card__price">4000 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
+                  </div>
                 </div>
+
+                <!-- Exclusive -->
                 <div class="tabs__content-item" id="content-4">
-                  
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-3.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Despair</h4>
+                      <p class="card__album">Hopelessness</p>
+                      <p class="card__price">3500 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
+                  </div>
+                  <div class="card">
+                    <div class="card__content">
+                      <img src="images/card-4.jpg" alt="" class="card__img" />
+                      <h4 class="card__autor">Lento</h4>
+                      <p class="card__album">Insomnia Chronicles</p>
+                      <p class="card__price">4000 ₽</p>
+                    </div>
+                    <a href="#" class="card__link">BUY NOW</a>
+                  </div>
                 </div>
+                
+                    
+                </div>
+                <a href="#" class="showmore-link">SHOW MORE</a>
               </div>
             </div>
-          
-            <a href="#" class="showmore-link">SHOW MORE</a>
+
+            
           </div>
-          
         </section>
 
-
-    <!-- блог -->
+        <!-- блог -->
         <section class="blog">
           <div class="container">
             <div class="blog__items">
               <div class="blog__item">
-                <img src="images/blog-1.jpg" alt="" class="blog__item-img">
-                <h4 class="blog__item-title">An easier way to buy your next Toyota</h4>
+                <img src="images/blog-1.jpg" alt="" class="blog__item-img" />
+                <h4 class="blog__item-title">
+                  An easier way to buy your next Toyota
+                </h4>
                 <a href="#" class="blog__item-link">more</a>
               </div>
               <div class="blog__item">
-                <img src="images/blog-2.jpg" alt="" class="blog__item-img">
-                <h4 class="blog__item-title">A Guide to Road-Tripping With Pets</h4>
+                <img src="images/blog-2.jpg" alt="" class="blog__item-img" />
+                <h4 class="blog__item-title">
+                  A Guide to Road-Tripping With Pets
+                </h4>
                 <a href="#" class="blog__item-link">more</a>
               </div>
             </div>
@@ -293,13 +384,17 @@
           </ul>
           <div class="footer__copy">
             <p class="fotter__copy-text">
-              For questions about the Spin the Soul Vinyl Store, please contact us at 7-888-777-5555. 
-              Our certified partners are committed to providing exceptional customer service and ensuring a seamless vinyl shopping experience.
+              For questions about the Spin the Soul Vinyl Store, please contact
+              us at 7-888-777-5555. Our certified partners are committed to
+              providing exceptional customer service and ensuring a seamless
+              vinyl shopping experience.
             </p>
             <p class="fotter__copy-text">
-              Spin the Soul does not manufacture or press vinyl records. Unless otherwise noted, all records featured on this website are offered 
-              for sale by trusted vinyl distributors. Availability is subject to change due to high demand. By using this website, 
-              you agree to Spin the Soul's Terms of Service and Privacy Policy.
+              Spin the Soul does not manufacture or press vinyl records. Unless
+              otherwise noted, all records featured on this website are offered
+              for sale by trusted vinyl distributors. Availability is subject to
+              change due to high demand. By using this website, you agree to
+              Spin the Soul's Terms of Service and Privacy Policy.
             </p>
           </div>
           <nav class="copy__nav">
