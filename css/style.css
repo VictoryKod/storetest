@@ -171,23 +171,91 @@ body {
     font-size: 96px;
     font-weight: 700px;
 }
-
+/* 
 .top__link {
-    background-color: #8F26FF;
+    background-color: #8F26FF; */
 /* Текст кнопки можно будет менять, 
 размер будет адаптироваться */
-    padding: 23px;
+    /* padding: 23px; */
 /* задали ширину блока кнопки */
-    max-width: 430px;
+    /* max-width: 430px; */
 /* применили ширину к кнопке (цвет обтекает не только текст) */
-    width: 100%;
+    /* width: 100%; */
 /* инлайн-блок, чтобы ссылка была строкой с блочным размером */
-    display: inline-block;
+/*     display: inline-block;
     text-transform: uppercase;
     font-size: 36px;
     font-weight: 700px;
+ } */
 
+/* КНОПКА SEARCH */
+.glow-on-hover {
+    height: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-weight: 700px;
+    max-width: 450px;
+    width: 100%; 
+    
 }
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #111
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* КНОПКА */
+
 
 /* Затемнили картинку вручную при помощи пвсевдокласса */
 .swiper::after {
@@ -436,7 +504,7 @@ top: 0;
     margin-bottom: 50px;
 }
 
-.form__btn {
+.submit__btn {
     text-transform: uppercase;
     color: #fff;
     background-color: #151515;
@@ -445,9 +513,15 @@ top: 0;
     font-weight: 400;
     padding: 13px 61px;
     margin: 0 auto;
+    display: block;
 
 }
 
+.submit__btn:hover {
+    transform: translateZ(10px) scale(1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+}
 .blog {
     padding-bottom: 150px;
 }
@@ -497,6 +571,11 @@ top: 0;
 
 }
 
+.showmore-link:hover {
+    transform: translateZ(10px) scale(1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
 .new-records {
     padding: 100px 0 100px;
 }
@@ -536,6 +615,7 @@ padding: 0;
     /* 100 вниз, 40 между */
     gap: 100px 40px;
 }
+
 
 /* переключение между вкладками new */
 .tabs__content-item.tabs__content-item--active {
@@ -596,3 +676,166 @@ padding: 0;
 
 }
 
+/* адаптив */
+
+.menu__btn {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.menu__btn span {
+    height: 2px;
+    background-color: #fff;
+    width: 100%;
+}
+@media(max-width: 1180px){
+    .important__list {
+    gap: 30px 20px;
+    }
+    .important__item-img {
+    width: 100%;
+    }
+}
+@media(max-width: 1040px){
+    .video__content {
+        width: 100%;
+    }
+}
+
+@media(max-width: 860px){
+    .menu__btn {
+        display: flex;
+    }
+    .menu__btn,
+    .logo {
+        position: relative;
+        z-index: 10;
+    }
+    .menu__list {
+        position: absolute;
+        z-index: 5;
+        background-color: #151515;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding-top: 200px;
+        /* весь эекран */
+        height: 100vh;
+        transform: translateY(-100%);
+        /* плавная анимация меню по кнопке 3 сек */
+        transition: transform .3s ease;
+
+    }
+    .menu__list.menu__list--active {
+        transform: translateY(0%);  
+    }
+    .store-advant__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+ 
+    }
+    .important__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 768px) {
+    .glow-on-hover {
+        padding: 16px;
+        max-width: 360px;
+        font-size: 28px;
+    }
+    .swiper-pagination-bullet {
+        width: 60px;
+    }
+    .swiper-pagination-bullet-active {
+        height: 4px;
+    } 
+    .title {
+        font-size: 70px;
+    }
+    .video__content{
+        height: 400px;
+    }
+    .footer__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    }
+}
+
+@media(max-width: 540px) {
+    .title {
+        font-size: 60px;
+    }
+    .glow-on-hover {
+        max-width: 310px;
+        font-size: 24px;
+    }
+    .swiper-pagination-horizontal
+    .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 10px;
+    } 
+    .swiper-pagination-bullet {
+        width: 35px;
+    }
+    .store-advant__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .store-advantl {
+        padding: 50px 0;
+    }
+    .section-title {
+        font-size: 34px;
+    }
+
+    .why-vinyl-list {
+        padding: 30px 0 40px;
+    }
+
+    .why-vinyl {
+       padding-bottom: 50px; 
+    }
+    .video {
+        padding-bottom: 50px;
+    }
+    .video__content {
+        height: 200px;
+    }
+
+    .why-vinyl-item {
+        padding: 65px 0 19px 0;
+        margin-right: auto;
+    }
+    .why-vinyl-item::before {
+        right: 0;
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+        font-size: 32px;
+    }
+    .important__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .app, .copy__nav-list {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .copy__nav-list {
+        gap: 20px;
+    }
+}

@@ -19,7 +19,7 @@
   <body>
     <!-- Внешняя обертка сайта -->
     <div class="wrapper">
-      
+<!-- Шапка --> 
       <header class="header header-main">
         <div class="container">
           <div class="header__inner">
@@ -27,6 +27,12 @@
               <img class="logo__img" src="images/logo.svg" alt="" />
             </a>
             <nav class="menu">
+              <!-- Гамбургер для адаптива меню -->
+              <button class="menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>              
               <ul class="menu__list">
                 <li class="menu__list-item">
                   <a href="#" class="menu__list-link">CATALOG</a>
@@ -54,7 +60,10 @@
           <div class="conteiner">
             <h1 class="title">Music on repeat</h1>
             <!-- кнопка-ссылка -->
-            <a href="#" class="top__link">Search on vinyl</a>
+            
+            <button class="glow-on-hover" type="button">SEARCH ON VINYL</button>
+
+            <!-- <a href="#" class="top__link">SEARCH ON VINYL</a> -->
           </div>
         </section>
         <!-- Слайдер -->
@@ -359,5 +368,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/adaptive.js"></script>
   </body>
 </html>
