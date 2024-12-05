@@ -33,11 +33,16 @@ a {
     display: flex;
     flex-direction: column;
 }
+
+.header__inner {
+    padding-right: 10px;
+    padding-left: 10px;
+}
 .container {
     max-width: 1220px;
 /* верх/низ 0, влево/право авто */
     margin: 0 auto;
-    padding: 0 5px;
+    padding: 0 10px 0 10px;
 }
 
 body {
@@ -514,13 +519,15 @@ top: 0;
     padding: 13px 61px;
     margin: 0 auto;
     display: block;
+    /* убрала серую рамку, в браузере видно было */
+    border: none;
 
 }
 
 .submit__btn:hover {
     transform: translateZ(10px) scale(1);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-
+    
 }
 .blog {
     padding-bottom: 150px;
@@ -584,11 +591,11 @@ top: 0;
     margin-bottom: 70px;
 }
 .tabs__btn {
-    padding: 0 150px;
+    padding: 0 150px 100px;
     display: flex;
     justify-content: space-between;
     gap: 80px;
-    padding-bottom: 100px;
+    
 }
 
 .tabs__btn-item {
@@ -697,6 +704,10 @@ padding: 0;
     background-color: #fff;
     width: 100%;
 }
+
+.card__img {
+    width: 100%;
+}
 @media(max-width: 1180px){
     .important__list {
     gap: 30px 20px;
@@ -704,12 +715,39 @@ padding: 0;
     .important__item-img {
     width: 100%;
     }
+    .tabs__content-item {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
+@media(max-width: 1100px) {
+    .blog__item-img {
+        margin-bottom: 15px;
+    }
+    .blog__item-title {
+        margin-bottom: 10px;
+        font-size: 16px;
+        text-align: center;
+
+    }
+    .blog__item-link {
+        margin: 0 auto;
+    }
+}
+
 @media(max-width: 1040px){
     .video__content {
         width: 100%;
     }
+    
+    .tabs__btn {
+        padding: 0 0 50px;
+        gap: 20px;
+    }
+    .tabs__content-item {
+        gap: 40px;
+    }
 }
+
 
 @media(max-width: 860px){
     .menu__btn {
@@ -749,8 +787,18 @@ padding: 0;
     .important__list {
         grid-template-columns: repeat(2, 1fr);
     }
+    .tabs__content-item {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
 }
+@media(max-width: 790px) {
+    .tabs__content-item {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
 
+}
 @media(max-width: 768px) {
     .glow-on-hover {
         padding: 16px;
@@ -774,6 +822,54 @@ padding: 0;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     }
+    .blog__item-title {
+        margin-bottom: 10px;
+        font-size: 16px;}
+
+}
+@media(max-width: 720px) {
+    .blog__item-link {
+        font-size: 12px;
+    }
+    .blog__item-title {
+        font-size: 14px;
+    }
+    .tabs__content-item {
+        gap: 40px;
+    }
+}
+@media(max-width: 650px) {
+    .tabs__content-item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tabs__btn-item {
+        font-size: 18px
+    }
+    .blog__items {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .blog__item-title {
+        text-align: left;
+        font-size: 16px;
+    }
+    .showmore-link {
+        font-size: 14px;
+        width: 150px;
+    }
+    .contacts {
+        padding: 50px 0;     
+    }
+
+    .form__input {
+        /* поля для ввода на всю ширину экрана */
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contact__text {
+        /* позволило уменьшить текст над формой */
+        padding: 0;
+    }
+
 }
 
 @media(max-width: 540px) {
@@ -838,4 +934,16 @@ padding: 0;
     .copy__nav-list {
         gap: 20px;
     }
+
+    .blog__item-title {
+        text-align: center;
+    }
+    .new-records {
+        padding: 50px 0;
+    }
+
+    .blog {
+        padding-bottom: 50px;
+    }
+
 }
