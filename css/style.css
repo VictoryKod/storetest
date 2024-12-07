@@ -845,8 +845,8 @@ padding: 0;
         max-width: 310px;
         font-size: 24px;
     }
-    .swiper-pagination-horizontal
-    .swiper-pagination-bullets .swiper-pagination-bullet {
+    .swiper-pagination-horizontal .swiper-pagination-bullets .swiper-pagination-bullet {
+        {
         margin: 0 10px;
     } 
     .swiper-pagination-bullet {
