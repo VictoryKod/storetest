@@ -103,7 +103,7 @@ body {
     display: flex;
     /* равномерное распр-е эл-ов внутри вдоль оси */
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 50px;  
 }
 
 /* Задаем ширину по макс.блоку, чтобы в дальнейшем можно было модифицировать текст
@@ -202,7 +202,7 @@ body {
     font-size: 36px;
     font-weight: 700px;
     max-width: 450px;
-    width: 100%; 
+    width: 100%;    
 }
 
 .glow-on-hover:before {
@@ -321,7 +321,7 @@ body {
 
 .store-advant__item-text {
     text-align: center;
-    line-height: 160%;
+    line-height: 160%;   
 }
 
 .why-vinyl {
@@ -757,12 +757,12 @@ padding: 0;
         grid-template-columns: repeat(2, 1fr);
     }
     .tabs__content-item {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);       
     }
 }
 @media(max-width: 790px) {
     .tabs__content-item {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);    
     }
 }
 @media(max-width: 768px) {
@@ -894,7 +894,6 @@ padding: 0;
     .app, .copy__nav-list {
         flex-direction: column;
         align-items: center;
-
     }
     .copy__nav-list {
         gap: 20px;
