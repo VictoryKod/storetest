@@ -60,12 +60,13 @@ body {
 /* /* гл.страница */
 .header-main {
     background-color: transparent;
-/* Подняли header-main */  
+    /* Подняли header-main */  
     position: absolute;
     z-index: 10;
     left: 0;
-    right: 0; */
+    right: 0;
 }
+
 /* верхнее меню */
 .header__inner {
     padding-top: 40px;
@@ -873,6 +874,7 @@ padding: 0;
 }
 
 @media(max-width: 540px) {
+
     .title {
         font-size: 60px;
     }
@@ -945,5 +947,4 @@ padding: 0;
     .blog {
         padding-bottom: 50px;
     }
-
 }
